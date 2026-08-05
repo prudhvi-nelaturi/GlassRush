@@ -27,7 +27,7 @@ Personal dev accounts must pass a closed test **per app** before production:
 | Free/paid | Free |
 | Contains ads | **No** (none integrated yet — update this when AdMob lands, see TODO.md) |
 | In-app purchases | No |
-| Privacy policy URL | **TODO — pending GitHub repo + Pages setup** (same pattern as ChaiTapriTycoon's `prudhvi-nelaturi.github.io/chaiTapriTycoon/privacy.html`) |
+| Privacy policy URL | `https://prudhvi-nelaturi.github.io/GlassRush/privacy.html` |
 | Contact email | `prudhvinelaturi29@gmail.com` |
 
 ## Store listing copy
