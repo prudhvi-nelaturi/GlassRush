@@ -67,7 +67,7 @@ Personal dev accounts must pass a closed test **per app** before production:
 |---|---|---|
 | App icon | 512×512 PNG | `store/icon-512.png` |
 | Feature graphic | 1024×500 PNG | `store/feature-graphic.png` |
-| Phone screenshots | ≥2, PNG/JPG, 16:9 or 9:16 | `store/screenshot-*.png` (stylized mockups — swap for real gameplay captures once tested on a real device, see TODO.md) |
+| Phone screenshots | ≥2, PNG/JPG, 16:9 or 9:16 | **Not yet captured** — take these from the desktop launcher (`./gradlew desktop:run`, resize the window to a phone aspect ratio) or a real device before submitting. See TODO.md. |
 
 ## Console questionnaires
 

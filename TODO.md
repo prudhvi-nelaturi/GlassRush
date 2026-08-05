@@ -62,9 +62,9 @@ of the above — a leaderboard nobody checks is wasted effort.
       final visual style (current icon is a generated glass-shard motif via
       `scripts/gen_assets.py` — good enough to ship, but revisit after a few runs of
       actual gameplay footage exist for reference).
-- [ ] **Capture real gameplay screenshots** for the Play Store listing once the game
-      is playable on a real device — the current `store/screenshot-*.png` are
-      stylized promotional mockups, not actual captures.
+- [ ] **Capture gameplay screenshots** for the Play Store listing — none exist yet.
+      Easiest source: `./gradlew desktop:run` resized to a phone aspect ratio, or a
+      real device once tested there.
 
 ## 📋 Ship & measure
 
