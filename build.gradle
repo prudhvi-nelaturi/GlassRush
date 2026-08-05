@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.7.3'
+    }
+}
+
+allprojects {
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+
+    version = '1.0.0'
+    ext {
+        appName = 'GlassRush'
+        gdxVersion = '1.13.1'
+        junitVersion = '4.13.2'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    }
+}

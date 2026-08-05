@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+sourceCompatibility = 17
+targetCompatibility = 17
+
+ext.mainClassName = 'com.prudhvinelaturi.glassrush.desktop.DesktopLauncher'
+
+// Assets live in android/assets; run desktop from there so Gdx.files.internal() paths match.
+sourceSets.main.resources.srcDirs = ["../android/assets"]
+
+task run(dependsOn: classes, type: JavaExec) {
+    mainClass = mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = "../android/assets"
+    ignoreExitValue = true
+    if (org.gradle.internal.os.OperatingSystem.current().isMacOsX()) {
+        jvmArgs += ["-XstartOnFirstThread"]
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+}

@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+sourceCompatibility = 17
+targetCompatibility = 17
+
+dependencies {
+    api "com.badlogicgames.gdx:gdx:$gdxVersion"
+    testImplementation "junit:junit:$junitVersion"
+}
