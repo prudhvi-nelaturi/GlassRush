@@ -28,6 +28,6 @@ public class GlassPanel {
 
     /** True if the given x overlaps solid glass (i.e. NOT within the gap), accounting for radius. */
     public boolean blocksAt(float x, float radius) {
-        return !broken && !(x + radius <= gapX || x - radius >= gapX + gapWidth);
+        return !broken && !gapContains(x, radius);
     }
 }
